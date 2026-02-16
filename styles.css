@@ -1,0 +1,468 @@
+/* Electronics Inventory Management System - Global Stylesheet */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navigation Styles */
+header {
+    background-image: url(shop.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ecf0f1;
+}
+
+.tagline {
+    font-size: 1em;
+    color: #bdc3c7;
+    font-style: italic;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #3b6187;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #1abc9c;
+    color: white;
+    transform: scale(1.05);
+}
+
+nav a.active {
+    background-color: #39e8ae;
+    color: white;
+}
+
+/* Main Content Area */
+main {
+    background-color: white;
+    margin: 20px auto;
+    padding: 30px;
+    min-height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+    color: #2c3e50;
+    margin: 30px 0 20px 0;
+    border-bottom: 3px solid #1abc9c;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #34495e;
+    margin: 20px 0 10px 0;
+}
+
+/* Text Formatting */
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Link Formatting */
+a {
+    color: #1abc9c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #8e44ad;
+}
+
+/* Image Styles */
+
+/* Rollover Image */
+.rollover-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #2c3e50;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: block;
+}
+
+.rollover-image:hover {
+    transform: scale(1.1);
+    border-color: #1abc9c;
+    box-shadow: 0 5px 15px rgba(26, 188, 156, 0.4);
+}
+
+/* Hyperlinked Image */
+.product-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.product-image:hover {
+    border-color: #1abc9c;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styled Image with Box Model and Positioning */
+.featured-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    padding: 15px;
+    margin: 20px auto;
+    border: 3px solid #1cdb8f;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.featured-image-caption {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+/* Table with visible borders (data table) */
+.data-table {
+    border: 2px solid #2c3e50;
+    background-color: #f9f9f9;
+}
+
+.data-table th {
+    background-color: #34495e;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border: 2px solid #2c3e50;
+    font-weight: bold;
+}
+
+.data-table td {
+    padding: 12px;
+    border: 2px solid #bdc3c7;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+.data-table tr:hover {
+    background-color: #d5dbdb;
+}
+
+/* Table with invisible borders (layout table) */
+.layout-table {
+    border: none;
+    background-color: transparent;
+}
+
+.layout-table td {
+    border: none;
+    padding: 15px;
+    vertical-align: top;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    border: 2px solid #bdc3c7;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #95a5a6;
+    border-radius: 5px;
+    background-color: white;
+}
+
+legend {
+    background-color: #34495e;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px 0;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="phone"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #1abc9c;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.3);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.radio-group,
+.checkbox-group {
+    margin-bottom: 15px;
+}
+
+.radio-option,
+.checkbox-option {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.radio-option label,
+.checkbox-option label {
+    margin: 0;
+    display: inline;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+input[type="submit"],
+input[type="reset"],
+button {
+    background-color: #1abc9c;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #16a085;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 188, 156, 0.4);
+}
+
+input[type="reset"] {
+    background-color: #e74c3c;
+}
+
+input[type="reset"]:hover {
+    background-color: #c0392b;
+}
+
+/* Product Cards/Sections */
+.product-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 4px solid #1abc9c;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.product-card h3 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.product-price {
+    font-size: 1.5em;
+    color: #e74c3c;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-description {
+    color: #7f8c8d;
+    font-size: 0.95em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 3px solid #1abc9c;
+}
+
+footer a {
+    color: #1abc9c;
+}
+
+footer a:hover {
+    color: #ecf0f1;
+    text-decoration: underline;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.highlight {
+    background-color: #fff3cd;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .data-table {
+        font-size: 0.9em;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 8px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+}
